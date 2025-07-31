@@ -50,7 +50,7 @@ const handleSubmit = async (e: Event) => {
       body: formData,
     })
 
-    router.push('/#/thank-you')
+    router.push('/thank-you')
   } catch (err) {
     console.error('Submission failed', err)
   }
