@@ -7,7 +7,7 @@
       </div>
       <div class="nav-actions">
 
-        <a href="#contact" class="contact-button">
+        <a href="#contact" class="contact-button" @click.prevent="scrollToContact">
           <Icon icon="mdi:play-circle-outline" width="20" height="20" />
           <span>book a demo</span>
         </a>
@@ -19,6 +19,13 @@
 <script setup lang="ts">
 import logoUrl from '@/assets/logo.png'
 import { Icon } from '@iconify/vue'
+const scrollToContact = () => {
+  const el = document.getElementById('contact')
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 </script>
 
 <style scoped>
