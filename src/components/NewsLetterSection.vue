@@ -9,7 +9,6 @@
   class="newsletter-form"
   action="https://o2do.us6.list-manage.com/subscribe/post?u=5eb0aee8cd2cb0e39905ac061&id=88d51797d0&f_id=000adee1f0"
   method="POST"
-  target="_blank"
   novalidate
 >
   <input

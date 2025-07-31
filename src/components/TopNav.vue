@@ -5,12 +5,8 @@
       <div class="logo-wrapper">
         <img :src="logoUrl" alt="Fit4Job Logo" class="logo" />
       </div>
-
-      <!-- Liens + Contact à droite -->
       <div class="nav-actions">
 
-
-        <!-- Bouton Contact visible à droite -->
         <a href="#contact" class="contact-button">
           <Icon icon="mdi:play-circle-outline" width="20" height="20" />
           <span>book a demo</span>
