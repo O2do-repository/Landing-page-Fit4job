@@ -1,36 +1,62 @@
 <template>
-  <section class="newsletter">
+  <section class="newsletter" id="contact">
     <div class="newsletter-content">
       <h2 class="newsletter-title">Book a demo</h2>
       <p class="newsletter-description">
         Our team will get back to you shortly to schedule the session.
       </p>
-<form
-  class="newsletter-form"
-  action="https://o2do.us6.list-manage.com/subscribe/post?u=5eb0aee8cd2cb0e39905ac061&id=88d51797d0&f_id=000adee1f0"
-  method="POST"
-  novalidate
->
-  <input
-    type="email"
-    name="EMAIL"
-    placeholder="Enter your email"
-    required
-    class="newsletter-input"
-  />
 
-  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-    <input type="text" name="b_5eb0aee8cd2cb0e39905ac061_88d51797d0" tabindex="-1" value="">
-  </div>
+      <form
+        class="newsletter-form"
+        @submit="handleSubmit"
+        action="https://o2do.us6.list-manage.com/subscribe/post?u=5eb0aee8cd2cb0e39905ac061&id=88d51797d0&f_id=000adee1f0"
+        method="POST"
+        novalidate
+      >
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="Enter your email"
+          required
+          class="newsletter-input"
+        />
 
-  <button type="submit" class="newsletter-button">
-    Subscribe
-  </button>
-</form>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input type="text" name="b_5eb0aee8cd2cb0e39905ac061_88d51797d0" tabindex="-1" value="" />
+        </div>
 
+        <button type="submit" class="newsletter-button">
+          Subscribe
+        </button>
+      </form>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
+const handleSubmit = async (e: Event) => {
+  e.preventDefault()
+
+  const form = e.target as HTMLFormElement
+  const formData = new FormData(form)
+
+  try {
+    await fetch(form.action, {
+      method: 'POST',
+      mode: 'no-cors', // important pour Mailchimp
+      body: formData,
+    })
+
+    // Redirige vers la page de remerciement (fonctionne en hash mode aussi)
+    router.push('/thank-you')
+  } catch (err) {
+    console.error('Submission failed', err)
+  }
+}
+</script>
 
 <style scoped>
 .newsletter {
@@ -104,4 +130,3 @@
   background-color: #3949ab;
 }
 </style>
-
