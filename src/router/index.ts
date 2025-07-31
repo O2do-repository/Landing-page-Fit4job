@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 // On importe AppView ou la page principale
 import App from '../App.vue'
@@ -11,7 +12,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
 
