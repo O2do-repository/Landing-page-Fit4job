@@ -2,12 +2,12 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { NConfigProvider, NGlobalStyle } from 'naive-ui'
 import HeroSection from './components/HeroSection.vue'
-import FeaturesSection from './components/featuresSection.vue'
+import FeaturesSection from './components/FeaturesSection.vue'
 import NewsLetterSection from './components/NewsLetterSection.vue'
 import DataSection from './components/DataSection.vue'
 import TopNav from './components/TopNav.vue'
 import AvisSection from './components/AvisSection.vue'
-import footerSection from './components/footerSection.vue'
+import FooterSection from './components/FooterSection.vue'
 import NeverMissSection from './components/NeverMissSection.vue'
 
 const showButton = ref(false)
