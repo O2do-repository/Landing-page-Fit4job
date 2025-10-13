@@ -9,7 +9,7 @@
       <!-- Texte à droite -->
       <div class="features-text">
       <h2 class="features-title">
-          Why <span class="purple">Fit</span><span class="blue">4</span><span class="purple">Job</span>?
+          Why <span class="purple">Fit</span><span class="blue">4</span><span class="purple">Jobs</span>?
       </h2>
         <ul class="feature-list">
           <li v-for="(feature, index) in features" :key="index">

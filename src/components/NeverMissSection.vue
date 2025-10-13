@@ -31,7 +31,7 @@ const features = [
   {
     icon: 'mdi:eye-off-outline',
     title: 'Zero Blind Spots',
-    description: 'Fit4Job scans every profile in real time, so you’ll never overlook the perfect candidate again.'
+    description: 'Fit4Jobs scans every profile in real time, so you’ll never overlook the perfect candidate again.'
   },
   {
     icon: 'mdi:account-tie',

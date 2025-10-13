@@ -26,7 +26,7 @@ import vanessaPhoto from '@/assets/Van.jpg'
 const testimonials = [
   {
     name: 'Arnaud',
-    text: 'Fit4Job helped me contact the right people at the perfect time. Brilliant tool!',
+    text: 'Fit4Jobs helped me contact the right people at the perfect time. Brilliant tool!',
     stars: 5,
     photo: arnaudPhoto
   },

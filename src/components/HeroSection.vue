@@ -10,7 +10,7 @@
         <h1 class="title-left">Find the Right Talent, Faster</h1>
         <h6 class="subtitle-left" >The best tool for recruiting agencies</h6>
         <p class="description">
-          Fit4Job instantly matches job offers with the best-fit profiles using smart criteria and AI.  
+          Fit4Jobs instantly matches job offers with the best-fit profiles using smart criteria and AI.  
           Spend less time searching, and more time hiring.<br /><br />
         
         </p>
