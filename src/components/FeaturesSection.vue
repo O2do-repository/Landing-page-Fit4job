@@ -3,7 +3,7 @@
     <div class="features-content">
       <!-- Image à gauche -->
       <div class="features-illustration">
-        <img src="@/assets/clock2.png" alt="Efficiency illustration" class="features-image" />
+        <img src="@/assets/overb.png" alt="Efficiency illustration" class="features-image" />
       </div>
 
       <!-- Texte à droite -->
@@ -26,7 +26,7 @@
 const features = [
   {
     title: 'Save Time',
-    description: 'No more hours wasted reviewing profiles. Instantly receive relevant matches through smart, AI-driven filtering.'
+    description: 'Centralize your LinkedIn and ICTJobs offers for a simpler, clearer, and faster job search.'
   },
   {
     title: 'Boost Quality',
