@@ -20,7 +20,7 @@
 import { Icon } from '@iconify/vue'
 import arnaudPhoto from '@/assets/Arnaud.jpg'
 import sebPhoto from '@/assets/Seb.jpg'
-import vanessaPhoto from '@/assets/Van.jpg'
+import lucienPhoto from '@/assets/lulu.jpg'
 
 
 const testimonials = [
@@ -37,10 +37,10 @@ const testimonials = [
     photo: sebPhoto
   },
   {
-    name: 'Vanessa',
+    name: 'Lucien',
     text: 'Clean UI, powerful features. My team adopted it in less than a day.',
     stars: 5,
-    photo: vanessaPhoto
+    photo: lucienPhoto
   },
 
 ]

@@ -6,7 +6,7 @@
             <ul class="feature-list">
             <li>
                 <h3>Real-time data updates</h3>
-                <p>Keep up with your most promising leads, from job changes to new roles and relocations</p>
+                <p>Keep up with your most promising leads, from job changes to new roles and relocations.</p>
             </li>
             <li>
                 <h3>Reach out at the right time</h3>
@@ -18,12 +18,10 @@
             </li>
             </ul>
       </div>
-      <!-- Image à gauche -->
       <div class="features-illustration">
         <img src="@/assets/data.jpg" alt="Prospect data illustration" class="features-image" />
       </div>
 
-      <!-- Texte à droite -->
 
     </div>
   </section>

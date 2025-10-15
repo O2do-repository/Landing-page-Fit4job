@@ -26,7 +26,7 @@
 const features = [
   {
     title: 'Save Time',
-    description: 'Centralize your LinkedIn and ICTJobs offers for a simpler, clearer, and faster job search.'
+    description: 'Centralize your LinkedIn, ICTJobs offers and more for a simpler, clearer, and faster job search.'
   },
   {
     title: 'Boost Quality',

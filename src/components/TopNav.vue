@@ -29,12 +29,17 @@ const scrollToContact = () => {
 </script>
 
 <style scoped>
+:root {
+  --nav-height: 72px;
+}
+
+/* --- Navigation --- */
 .top-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 72px;
+  height: var(--nav-height);
   z-index: 1000;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
@@ -54,6 +59,7 @@ const scrollToContact = () => {
   justify-content: space-between;
 }
 
+/* Logo */
 .logo-wrapper .logo {
   height: 56px;
   width: auto;
@@ -64,55 +70,14 @@ const scrollToContact = () => {
   transform: scale(1.05);
 }
 
+/* Actions */
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1a237e;
-  padding: 8px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.nav-links a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(155, 89, 182, 0.12);
-  border-radius: 50%;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: -1;
-}
-
-.nav-links a:hover {
-  color: #9b59b6;
-  background-color: white;
-  transform: scale(1.15);
-}
-
-.nav-links a:hover::before {
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-/* Bouton Contact */
+/* Bouton de contact */
 .contact-button {
   display: flex;
   align-items: center;
@@ -124,10 +89,27 @@ const scrollToContact = () => {
   font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
   background-color: #3949ab;
 }
 
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .top-nav {
+    padding: 0 1rem;
+    height: 64px;
+  }
+
+  .logo-wrapper .logo {
+    height: 44px;
+  }
+
+  .contact-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
 </style>
